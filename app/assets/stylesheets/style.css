@@ -8,11 +8,14 @@ body,
 ul,
 li,
 h1,
-h2,
 p,
 div {
   margin: 0;
   padding: 0;
+}
+
+h2 {
+  margin: 10px 100px;
 }
 
 body {
@@ -37,7 +40,7 @@ a {
 /* ヘッダー */
 
 .header {
-  background-color: burlywood;
+  background-color: blue;
   margin-bottom: 48px;
   padding: 20px 0;
 
@@ -52,16 +55,17 @@ a {
   justify-content: space-between;
 }
 .logo {
-  width: 200px;
+  width: 150px;
 }
 .nav__btn{
   display: inline-block;
+  margin-top: 30px;
   padding: 0.4em 1.6em;
   font-size: 0.8em;
-  color: blue;
+  color:white;
   text-decoration: none;
   user-select: none;
-  border: 1px blue solid;
+  border: 1px white solid;
   border-radius: 3px;
   transition: 0.4s ease;
 }
@@ -72,10 +76,11 @@ a {
 
 .nav__logout{
   display: inline-block;
+  margin-top: 30px;
   padding: 0.4em 1.6em;
   font-size: 0.8em;
-  color: blue;
-  border: 1px blue solid;
+  color: white;
+  border: 1px white solid;
   text-decoration: none;
   user-select: none;
   border-radius: 3px;
@@ -95,11 +100,11 @@ a {
 }
 
 .field{
-  margin: 10px 0;
+  margin: 10px 100px;
 }
 
 .actions{
-  margin-bottom: 40px;
+  margin: 10px 100px;
 }
 
 .form__btn{
