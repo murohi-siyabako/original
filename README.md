@@ -1,33 +1,20 @@
-# テーブル設計
+# NEWS
+ 
+# 概要
+ニュース記事一覧
 
-## users テーブル
+# URL
 
-| Column   | Type   | Options     |
-| -------- | ------ | ----------- |
-| name | string | null: false |
-| email    | string | null: false |
-| encrypted_password | string | null: false |
 
-### Association
-- has_many :comments
+# 利用方法
+各項目の記事のタイトルをクリックし、それぞれのニュースサイトの記事にアクセス可能。
 
-## news テーブル
+# 目指した課題解決
+テレビや新聞だけでなく、少しでも多くの人にネット記事を見てもらうために、自分なりにニュースサイトを公開できるようにしました。
 
-| Column  | Type       | Options                        |
-| ------- | ---------- | ------------------------------ |
-| category_id | integer | null: false, foreign_key:true |
-| comment | references | null: false, foreign_key:true |
+# 洗い出した要件
+### 記事閲覧機能
+NewsAPIを使ってニュース記事を見れるようにしました。記事タイトルを選択することで各ページへ遷移する。既存サイトと連携し、1時間ごとに記事内容が更新されます。
 
-### Association
-- has_many :commets
 
-## comments テーブル
 
-| Column  | Type       | Options                        |
-| ------- | ---------- | ------------------------------ |
-| user | references | null: false, foreign_key:true |
-| new | references | null: false, foreign_key:true |
-
-### Association
-- belongs_to :user
-- belongs_to :new

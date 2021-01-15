@@ -1,0 +1,12 @@
+<p>ニュース一覧</p>
+<hr>
+<div id="result"></div>
+<script>
+var f = function(){
+    $.ajax({
+        type: 'GET',
+        url: '/news/search'
+    });
+};
+f();
+</script>

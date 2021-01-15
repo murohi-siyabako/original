@@ -4,7 +4,7 @@
     <title>Original</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -14,18 +14,8 @@
       <div class="inner">
         <div class="nav">
           <div class="nav__left">
-            <%= link_to image_tag("hc-web-2018-news-1-sml-card.jpg.jpg", class: :logo), root_path %>
+            <%= image_tag("hc-web-2018-news-1-sml-card.jpg.jpg", class: :logo) %>
           </div>
-          <% if user_signed_in? %>
-            <div class="nav__right">
-              <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: :nav__logout %>
-            </div>
-          <% else %>
-            <div class="nav__right">
-              <%= link_to "ログイン", user_session_path, class: :nav__btn %>
-              <%= link_to "新規登録", new_user_registration_path, class: :nav__btn %>
-            </div>
-          <% end %>
         </div>
       </div>
     </header>

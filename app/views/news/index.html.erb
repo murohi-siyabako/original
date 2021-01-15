@@ -7,7 +7,7 @@
     <% end %>
   </div>
   <header>
-    <p>Powered by <a href="https://newsapi.org", class="btn">News API</a></p>
+    <p class="font">Powered by <a href="https://newsapi.org", class="btn">News API</a></p>
   </header>
   <div class="articles">
     <% @articles["articles"].each do |article| %>
@@ -23,7 +23,7 @@
             <%= article["source"]["name"]%>
           </div>
           <div class="image">
-            <%= image_tag article["urlToImage"],:size =>'240x160' %>
+            <%= image_tag article["urlToImage"] || '#', :size =>'240x160' %>
           </div>
           <div class="content">
             <%= article["description"] %>

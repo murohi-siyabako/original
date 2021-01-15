@@ -1,10 +1,6 @@
-<div class="card">
-  <%= link_to image_tag(prototype.image, class: :card__img ), prototype_path(prototype) %>
-  <div class="card__body">
-    <%= link_to prototype.title, prototype_path(prototype), class: :card__title%>
-    <p class="card__summary">
-      <%= prototype.catch_copy %>
-    </p>
-    <%= link_to "by #{prototype.user.name}", user_path(prototype.user), class: :card__user %>
-  </div>
-</div>
+<% if user_signed_in?%>
+    <%= form_with(url:search_news_index_path, local: true, method: :get, class: "seach-form") do |form| %>
+        <%= form.text_field :keyword, class: "seach-input"%>
+        <%= form.submit "seach", class: "seach-btn"%>
+    <% end %>
+<% end %>
