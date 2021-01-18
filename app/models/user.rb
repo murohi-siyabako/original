@@ -10,4 +10,5 @@ class User < ApplicationRecord
   end
 
   has_many :comments
+  has_many :news
 end
