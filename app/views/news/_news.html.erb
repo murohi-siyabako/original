@@ -1,6 +1,6 @@
 <% if user_signed_in?%>
     <%= form_with(url:search_news_index_path, local: true, method: :get, class: "seach-form") do |form| %>
-        <%= form.text_field :keyword, class: "seach-input"%>
+        <%= form.collection_select :category_id, Category.all, :id, :name, {}, {class:"select-box", id:"news-category"} %>
         <%= form.submit "seach", class: "seach-btn"%>
     <% end %>
 <% end %>
