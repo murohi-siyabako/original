@@ -10,8 +10,7 @@ https://blooming-earth-90741.herokuapp.com/
 テレビや新聞だけでなく、少しでも多くの人にネット記事を見てもらうために、自分なりにニュースサイトを公開できるようにしました。
 
 # DEMO
-https://github.com/murohi-siyabako/original/issues/20#issue-797904410
-
+![](https://i.gyazo.com/254662c5c3117432b04b9f92a055a8c3.mp4/gif/your_gif.gif)
 見たい記事をスクロールしていき、各Webサイトに飛べるようになっています。
 
 # 工夫した点
