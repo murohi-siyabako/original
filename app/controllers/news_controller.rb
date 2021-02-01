@@ -6,13 +6,4 @@ class NewsController < ApplicationController
         json = Net::HTTP.get(uri)
         @articles = JSON.parse(json)
     end
-
-    
-  
-  private
-
-  def news_params
-    params.require(:new).permit(:category_id).merge(user_id: current_user.id)
-  end
-
 end
