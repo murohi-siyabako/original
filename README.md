@@ -11,6 +11,7 @@ https://blooming-earth-90741.herokuapp.com/
 
 # DEMO
 ![254662c5c3117432b04b9f92a055a8c3](https://user-images.githubusercontent.com/73973960/106690581-67fe5680-6615-11eb-9250-cadb4eb0924d.gif)
+
 見たい記事をスクロールしていき、各Webサイトに飛べるようになっています。
 
 # 工夫した点
